@@ -165,6 +165,18 @@
         "view": "Countries/tabcountries.hbs",
         "return_type": "application/json"
     },
+    "GET/tab_countries": {
+        "controler": "sql/selectSQL",
+        "sql_query": "SELECT * FROM countries",
+        "view": "Countries/tabcountries.hbs",
+        "title": "Liste des Pays"
+    },
+    "GET/tab_communes": {
+        "controler": "sql/selectSQL",
+        "sql_query": "SELECT * FROM countries",
+        "view": "Communes/tabcommunes.hbs",
+        "title": "Liste des communes"
+    },
     "GET/formations": {
         "controler": "sql/selectSQL",
         "sql_query": "SELECT * FROM formations",
