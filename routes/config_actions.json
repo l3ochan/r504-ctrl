@@ -173,7 +173,7 @@
     },
     "GET/tab_communes": {
         "controler": "sql/selectSQL",
-        "sql_query": "SELECT * FROM countries",
+        "sql_query": "SELECT * FROM communes",
         "view": "Communes/tabcommunes",
         "title": "Liste des communes"
     },
