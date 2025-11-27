@@ -164,5 +164,11 @@
         "sql_query": "SELECT * FROM countries",
         "view": "Countries/tabcountries.hbs",
         "return_type": "application/json"
+    },
+    "GET/formations": {
+        "controler": "sql/selectSQL",
+        "sql_query": "SELECT * FROM formations",
+        "view": "Formations/liste_formations",
+        "title": "Liste des formations"
     }
 }
