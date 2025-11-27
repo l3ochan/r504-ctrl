@@ -183,7 +183,7 @@
         "view": "Formations/liste_formations.hbs",
         "title": "Liste des formations"
     },
-    "GET/newFormation": {
+    "GET/aaa": {
         "controler": "sql/selectByIdAndListSchemas",
         "sql_query": "SELECT * FROM formations WHERE id_formation=?",
         "sql_list": [
