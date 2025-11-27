@@ -184,7 +184,7 @@
         "title": "Liste des formations"
     },
     "GET/newFormation": {
-        "controler": "sql/selectByIdAndListSchemas",
+        "controler": "sql/selectAndListSchemas",
         "sql_query": "SELECT * FROM formations WHERE id_formation=?",
         "sql_list": [
             "SELECT * FROM formateurs"
