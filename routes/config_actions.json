@@ -202,5 +202,28 @@
         "controler": "sql/selectSQL",
         "sql_query": "SELECT * FROM atome",
         "view": "Atomes/atomes"
+    },
+    "GET/formAtome": {
+        "controler": "sql/selectSQLById",
+        "sql_query": "SELECT * FROM atome WHERE id=?",
+        "view": "Users/formUser",
+        "form_action": "/modifyAtome",
+        "del_label": "Atome",
+        "libelle": "Modification",
+        "title": "Modifier un Atome de l'application"
+    },
+    "POST/modifyAtome": {
+        "controler": "sql/updateSQL",
+        "sql_query": "UPDATE users SET nom=?, symbole=?, numero=?, electron=?, masse_volumique=?, masse_atomique=?, is_radioactif=? WHERE id=?",
+        "params_query": [
+            "nom",
+            "symbole",
+            "numero",
+            "electron",
+            "masse_volumique",
+            "masse_atomique",
+            "is_radioactif"
+        ],
+        "redirect": "/atomes"
     }
 }

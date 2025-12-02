@@ -8,7 +8,7 @@
             {{else}}
                 <option value="0">Sélectionnez un atome</option>
                 {{#each data}}
-                    <option value="{{this.id}}">{{this.nom}} {{this.symbole}}-{{this.numero}}</option>
+                    <option value="{{this.id}}">{{this.nom}}-{{this.symbole}}-{{this.numero}}</option>
                 {{/each}}
             {{/compare}}
         </select>
@@ -19,11 +19,11 @@
     </div>
 </div>
 <script>
-    var usr = document.getElementById('user');
+    var usr = document.getElementById('atome');
     usr.addEventListener('change', function (evt) {
         window.location = "/formAtome/" + usr.value;
     });
-    var btn_new = document.getElementById('newUser');
+    var btn_new = document.getElementById('newAtome');
     btn_new.addEventListener('click', function (evt) {
         window.location = "/newAtome";
     });
