@@ -54,11 +54,11 @@
     var form = document.getElementById('formAddAtome');
     form.addEventListener('submit', function (evt) {
         var actionPost = "/" + form.action.split('/')[3];
-        if (actionPost == "/modifyUser") form.action += "/{{data.id_users}}";
+        if (actionPost == "/modifyAtome") form.action += "/{{data.id}}";
         form.submit();
     });
     var btn_del = document.getElementById('delbtn');
     btn_del.addEventListener('click', function (evt) {
-        window.location = "/deleteUser/{{data.id_users}}";
+        window.location = "/deleteAtome/{{data.id}}";
     });
 </script>

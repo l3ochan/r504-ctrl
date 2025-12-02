@@ -183,5 +183,19 @@
         "controler": "sql/selectSQL",
         "sql_query": "SELECT * FROM atome",
         "return_type": "application/json"
+    },
+    "POST/createAtome": {
+        "controler": "sql/insertSQL",
+        "sql_query": "INSERT INTO atome (nom, symbole, numero, electron, masse_volumique, masse_atomique, is_radioactif) VALUES( ?,?,?,?,?,?,?)",
+        "params_query": [
+            "nom",
+            "symbole",
+            "numero",
+            "electron",
+            "masse_volumique",
+            "masse_atomique",
+            "is_radioactif"
+        ],
+        "redirect": "/atomes"
     }
 }
