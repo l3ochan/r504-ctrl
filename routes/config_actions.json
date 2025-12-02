@@ -206,7 +206,7 @@
     "GET/formAtome": {
         "controler": "sql/selectSQLById",
         "sql_query": "SELECT * FROM atome WHERE id=?",
-        "view": "Users/formUser",
+        "view": "Atomes/formAtome",
         "form_action": "/modifyAtome",
         "del_label": "Atome",
         "libelle": "Modification",
