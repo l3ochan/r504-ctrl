@@ -169,7 +169,6 @@
         "controler": "sql/selectListSchemas",
         "sql_query": "SELECT * FROM atome",
         "view": "Atomes/formAtome",
-        "return_type": "application/json",
         "form_action": "/createAtome",
         "del_label": "Atome",
         "libelle": "Création",
@@ -178,7 +177,6 @@
         "GET/jsonAtome": {
         "controler": "sql/selectSQL",
         "sql_query": "SELECT * FROM atome",
-        "view": "Atomes/tabatome.hbs",
-        "return_type": "application/json"
+        "view": "Atomes/tabatome.hbs"
     }
 }
