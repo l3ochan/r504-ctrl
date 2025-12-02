@@ -174,9 +174,14 @@
         "libelle": "Création",
         "title": "Ajouter un Atome à l'application :"
     },
-        "GET/tabAtome": {
+    "GET/tabAtomes": {
         "controler": "sql/selectSQL",
         "sql_query": "SELECT * FROM atome",
         "view": "Atomes/tabatomes"
+    },
+    "GET/jsonAtome": {
+        "controler": "sql/selectSQL",
+        "sql_query": "SELECT * FROM atome",
+        "return_type": "application/json"
     }
 }
