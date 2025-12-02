@@ -166,7 +166,7 @@
         "return_type": "application/json"
     },
     "GET/newAtome": {
-        "controler": "sql/selectListSchemas",
+        "controler": "sql/getView",
         "sql_query": "SELECT * FROM atome",
         "view": "Atomes/formAtome",
         "form_action": "/createAtome",
