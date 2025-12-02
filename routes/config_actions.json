@@ -225,5 +225,10 @@
             "is_radioactif"
         ],
         "redirect": "/atomes"
+    },
+    "GET/deleteAtome": {
+        "controler": "sql/deleteSQLById",
+        "sql_query": "DELETE FROM atome WHERE id=?",
+        "redirect": "/atome"
     }
 }
