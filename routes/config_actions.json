@@ -164,5 +164,11 @@
         "sql_query": "SELECT * FROM countries",
         "view": "Countries/tabcountries.hbs",
         "return_type": "application/json"
+    },
+    "GET/newAtome": {
+        "controler": "sql/selectListSchemas",
+        "sql_query": "SELECT * FROM atomes",
+        "view": "Countries/tabcountries.hbs",
+        "return_type": "application/json"
     }
 }
