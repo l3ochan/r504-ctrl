@@ -214,7 +214,7 @@
     },
     "POST/modifyAtome": {
         "controler": "sql/updateSQL",
-        "sql_query": "UPDATE users SET nom=?, symbole=?, numero=?, electron=?, masse_volumique=?, masse_atomique=?, is_radioactif=? WHERE id=?",
+        "sql_query": "UPDATE atome SET nom=?, symbole=?, numero=?, electron=?, masse_volumique=?, masse_atomique=?, is_radioactif=? WHERE id=?",
         "params_query": [
             "nom",
             "symbole",
